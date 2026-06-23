@@ -178,6 +178,68 @@ cd frontend
 npm run dev
 ```
 
+## Running with Docker
+
+### Configure Environment Variables
+
+Before starting the containers, update the database connection string in the backend `.env` file:
+
+```env
+DATABASE_URL=postgresql://postgres:1993@postgres:5432/agromind
+```
+
+> **Note:** When running inside Docker, `postgres` is the hostname of the PostgreSQL container, so `localhost` will not work.
+
+### Build and Start Containers
+
+Navigate to the source directory:
+
+```bash
+cd 02_src
+
+```bash
+docker compose up --build
+```
+
+This command will:
+
+* Build the Docker images
+* Start the backend, frontend, and PostgreSQL containers
+* Create the required Docker network
+
+### Seed the Database
+
+After the containers are running, seed the disease-product mapping database:
+
+```bash
+docker compose exec backend python seed_db.py
+```
+
+### Access the Application
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+Backend API:
+
+```text
+http://localhost:8000
+```
+
+### Testing the AI Diagnosis Tool
+
+Sample images for testing the AI diagnosis functionality are available in:
+
+```text
+01_data/test_images
+```
+
+Upload any of these images through the AgroMind interface to verify disease detection, treatment recommendations, and product suggestions.
+
+
 **Note:** Sample images for testing the AI diagnosis functionality are available in the `01_data/test_images` directory.
 
 ---
