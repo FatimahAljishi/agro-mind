@@ -178,8 +178,7 @@ cd frontend
 npm run dev
 ```
 
-```md
-> **Note:** Sample images for testing the AI diagnosis functionality are available in `01_data/test_images`.
+**Note:** Sample images for testing the AI diagnosis functionality are available in the `01_data/test_images` directory.
 
 ---
 
