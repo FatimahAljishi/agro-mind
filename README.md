@@ -178,6 +178,20 @@ cd frontend
 npm run dev
 ```
 
+### Access the Application
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+Backend API:
+
+```text
+http://localhost:8000
+```
+
 ## Running with Docker
 
 ### Configure Environment Variables
@@ -216,20 +230,6 @@ After the containers are running, seed the disease-product mapping database:
 docker compose exec backend python seed_db.py
 ```
 
-### Access the Application
-
-Frontend:
-
-```text
-http://localhost:5173
-```
-
-Backend API:
-
-```text
-http://localhost:8000
-```
-
 ### Testing the AI Diagnosis Tool
 
 Sample images for testing the AI diagnosis functionality are available in:
@@ -239,9 +239,6 @@ Sample images for testing the AI diagnosis functionality are available in:
 ```
 
 Upload any of these images through the AgroMind interface to verify disease detection, treatment recommendations, and product suggestions.
-
-
-**Note:** Sample images for testing the AI diagnosis functionality are available in the `01_data/test_images` directory.
 
 ---
 
