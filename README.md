@@ -237,7 +237,7 @@ A deployed version of AgroMind is available on Amazon EC2.
 Open the application in your browser:
 
 ```text
-[http://YOUR_EC2_PUBLIC_IP](http://98.80.119.7:5173/)
+http://98.80.119.7:5173/
 ```
 
 No local installation or Docker setup is required when using the deployed version.
