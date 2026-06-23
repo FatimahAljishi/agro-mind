@@ -196,6 +196,7 @@ Navigate to the source directory:
 
 ```bash
 cd 02_src
+```
 
 ```bash
 docker compose up --build
