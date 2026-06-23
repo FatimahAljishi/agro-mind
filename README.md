@@ -230,7 +230,7 @@ After the containers are running, seed the disease-product mapping database:
 docker compose exec backend python seed_db.py
 ```
 
-### Testing the AI Diagnosis Tool
+## Testing the AI Diagnosis Tool
 
 Sample images for testing the AI diagnosis functionality are available in:
 
