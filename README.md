@@ -230,6 +230,18 @@ After the containers are running, seed the disease-product mapping database:
 docker compose exec backend python seed_db.py
 ```
 
+## Running the Deployed Application
+
+A deployed version of AgroMind is available on Amazon EC2.
+
+Open the application in your browser:
+
+```text
+[http://YOUR_EC2_PUBLIC_IP](http://98.80.119.7:5173/)
+```
+
+No local installation or Docker setup is required when using the deployed version.
+
 ## Testing the AI Diagnosis Tool
 
 Sample images for testing the AI diagnosis functionality are available in:
